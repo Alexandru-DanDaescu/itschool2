@@ -28,6 +28,6 @@ public class Homework2
         int num3 = (sc.nextInt()+500)/2;
         if(num3 >= 324 && num3 <= 401) System.out.println("User is in the specified range");
         else System.out.println("User is not in specified range");
-        sc.close();
+
     }
 }
