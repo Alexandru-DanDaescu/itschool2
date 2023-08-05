@@ -162,7 +162,10 @@ public class Homework {
             bool2 = !bool2;
             System.out.println(bool1+"\n"+bool2);
         }
-        else System.exit(0);
-
+        else
+        {
+            sc.close();
+            System.exit(0);
+        }
     }
 }
