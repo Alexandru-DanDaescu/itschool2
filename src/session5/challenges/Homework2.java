@@ -113,6 +113,8 @@ public class Homework2 {
 
 
         }
+       //sc.close();
+       //Intellij says that this code is unreachable and i am not sure why exactly.
 
 
     }

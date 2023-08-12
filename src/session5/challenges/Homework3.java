@@ -38,6 +38,7 @@ public class Homework3 {
 
         }
         System.out.println(addition);
+        sc.close();
 
     }
 }
