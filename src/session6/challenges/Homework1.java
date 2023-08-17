@@ -3,6 +3,7 @@ package session6.challenges;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
+
 public class Homework1 {
     public static void main(String[] args) {
 
@@ -36,19 +37,17 @@ public class Homework1 {
 
 
         System.out.println("Enter 10 words to concatenate");
-        System.out.println(concatenateListOfStrings(stringList,stringBuilder2)); //I am unsure of how to remove the brackets that appear.
+        System.out.println(concatenateListOfStrings(stringList, stringBuilder2)); //I am unsure of how to remove the brackets that appear.
 
 
 //  4. Removing Vowels
 //  Description: Create a Java program that uses the StringBuilder class to remove all the vowels from an input string.
 
 
-
         System.out.println("Enter words with vowels.");
         String input2 = sc.nextLine();
         StringBuilder stringBuilder3 = removeVowels(input2);
         System.out.println(stringBuilder3);
-
 
 
 //  5. Word Capitalizer
@@ -59,8 +58,8 @@ public class Homework1 {
 
         String[] words = sentence.split("\\s"); //Ask what this does.
 
-        for(String index : words){
-            if(!sentence.equals("")){
+        for (String index : words) {
+            if (!sentence.equals("")) {
                 stringBuilder4.append(Character.toUpperCase(index.charAt(0)));
                 stringBuilder4.append(index.substring(1));
             }
@@ -69,13 +68,11 @@ public class Homework1 {
         System.out.println(stringBuilder4.toString().trim());
 
 
-
     }
 
 
-
     //  2.
-    public static boolean palindromeChecker(String string){
+    public static boolean palindromeChecker(String string) {
 
         StringBuilder palindrome = new StringBuilder(string);
         palindrome.reverse();
@@ -85,8 +82,8 @@ public class Homework1 {
         return reverse.equals(string) ? true : false;
     }
 
-//  3.
-    public static String concatenateListOfStrings(List<String> stringList, StringBuilder stringBuilder){
+    //  3.
+    public static String concatenateListOfStrings(List<String> stringList, StringBuilder stringBuilder) {
         Scanner sc = new Scanner(System.in);
 
         stringList = new ArrayList<>();
@@ -98,18 +95,18 @@ public class Homework1 {
 
         String result = "";
 
-        for(int i = 0;i<10;i++){
-          stringList.add(sc.next());
-          result = String.valueOf(stringBuilder
-                  .append(stringList.get(i))
-                  .append(" "));
+        for (int i = 0; i < 10; i++) {
+            stringList.add(sc.next());
+            result = String.valueOf(stringBuilder
+                    .append(stringList.get(i))
+                    .append(" "));
 
         }
 
-        return  result;
+        return result;
     }
 
-//  4.
+    //  4.
     public static StringBuilder removeVowels(String input) {
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -125,8 +122,8 @@ public class Homework1 {
         vowels.add('O');
         vowels.add('U');
 
-        for(char c : input.toCharArray()){
-            if(!vowels.contains(c)){
+        for (char c : input.toCharArray()) {
+            if (!vowels.contains(c)) {
                 stringBuilder.append(c);
             }
         }

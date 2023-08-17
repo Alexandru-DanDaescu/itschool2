@@ -14,17 +14,15 @@ public class Homework2 {
 //   For instance, replace "cat" with "dog" in the string "The cat sat on the mat."
 
 
-
         StringBuilder stringBuilder = new StringBuilder("The cat sat on the mat");
 
-        stringBuilder.replace(4,7,"dog");
+        stringBuilder.replace(4, 7, "dog");
 
         System.out.println(stringBuilder);
 
 //  7. Duplicate Character Remover
 //  Description: Design a program using StringBuilder that removes duplicate characters from a string.
 //  For example, "balloon" should become "balon".
-
 
 
         System.out.println("Enter words with a maximum of two duplicate characters");
@@ -34,8 +32,8 @@ public class Homework2 {
         StringBuilder duplicateRemover = new StringBuilder(userInput);
 
 
-        for(int i = 0;i<userInput.length()-1;i++){
-            if(userInput.charAt(i) == userInput.charAt(i+1)){
+        for (int i = 0; i < userInput.length() - 1; i++) {
+            if (userInput.charAt(i) == userInput.charAt(i + 1)) {
                 duplicateRemover.deleteCharAt(i);
             }
         }
@@ -52,7 +50,7 @@ public class Homework2 {
 
         StringBuilder insertString = new StringBuilder(string1);
 
-        insertString.insert(6," "+string2+" ");
+        insertString.insert(6, " " + string2 + " ");
 
         System.out.println(insertString);
 
@@ -60,16 +58,14 @@ public class Homework2 {
 //  Description: Using StringBuilder, write a program that counts the frequency of each character in a string.
 
 
-
         StringBuilder stringBuilder2 = new StringBuilder("Character frequency tester.");
         int count = 0;
-        for(int i = 0;i<stringBuilder2.length();i++){
-            if(stringBuilder2.charAt(i) == 'a' || stringBuilder2.charAt(i) == 'e' || stringBuilder2.charAt(i) == 'r'){
+        for (int i = 0; i < stringBuilder2.length(); i++) {
+            if (stringBuilder2.charAt(i) == 'a' || stringBuilder2.charAt(i) == 'e' || stringBuilder2.charAt(i) == 'r') {
                 count++;
             }
         }
-        System.out.println("The amount of frequencies we have are : "+count);
-
+        System.out.println("The amount of frequencies we have are : " + count);
 
 
 //  12. CamelCase to Snake_case Converter
@@ -80,8 +76,8 @@ public class Homework2 {
 
         StringBuilder stringBuilder3 = new StringBuilder(camelCase.toLowerCase());
 
-        stringBuilder3.insert(4,"_");
-        stringBuilder3.insert(7,"_");
+        stringBuilder3.insert(4, "_");
+        stringBuilder3.insert(7, "_");
         stringBuilder3.insert(13, "_");
 
 
@@ -94,9 +90,9 @@ public class Homework2 {
 
         StringBuilder stringBuilder4 = new StringBuilder(text);
 
-        stringBuilder4.replace(0,2, "aaa");
-        stringBuilder4.replace(3,5, "bb");
-        stringBuilder4.replace(5,7, "cccc");
+        stringBuilder4.replace(0, 2, "aaa");
+        stringBuilder4.replace(3, 5, "bb");
+        stringBuilder4.replace(5, 7, "cccc");
 
         System.out.println(stringBuilder4);
 
@@ -104,19 +100,6 @@ public class Homework2 {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Please ignore this. I was testing out the code to see how it works.
