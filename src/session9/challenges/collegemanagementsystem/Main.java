@@ -60,11 +60,7 @@ public class Main {
         System.out.println();
         historyCourse.courseAssignments(professorOne,studentFour);
 
-        System.out.println();
-        System.out.println();
 
-
-        System.out.println();
 
 
     }
