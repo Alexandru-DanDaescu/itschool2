@@ -11,25 +11,24 @@ public class Client {
     private String dateOfBirth;
 
 
-    public Client(double currentBalance, char sex, String dateOfBirth){
+    public Client(double currentBalance, char sex, String dateOfBirth) {
         this.currentBalance = currentBalance;
         this.sex = sex;
         this.dateOfBirth = LocalDate.parse(dateOfBirth, DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString();
     }
 
 
-    public double getCurrentBalance(){
+    public double getCurrentBalance() {
         return currentBalance;
     }
 
-    public char getSex(){
+    public char getSex() {
         return sex;
     }
 
-    public String getDate(){
+    public String getDate() {
         return dateOfBirth;
     }
-
 
 
     public String toString() {

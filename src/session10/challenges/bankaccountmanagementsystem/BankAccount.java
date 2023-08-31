@@ -18,7 +18,7 @@ public class BankAccount {
 
     private List<Client> clients;
 
-    public BankAccount(String accountHolderName, double accountBalance){
+    public BankAccount(String accountHolderName, double accountBalance) {
         this.accountHolderName = accountHolderName;
         this.accountBalance = accountBalance;
         this.accountNumber = UUID.randomUUID();
@@ -26,43 +26,36 @@ public class BankAccount {
     }
 
 
-    public List<Client> getClients(){
+    public List<Client> getClients() {
         return clients;
     }
 
-    public void addClient(Client client){
+    public void addClient(Client client) {
         clients.add(client);
     }
 
-    public double depositSum(Client client){
-         currentMoney = 0;
-        if(client.getCurrentBalance() > 0 && this.accountBalance + client.getCurrentBalance() > 0){
-           currentMoney = this.accountBalance + client.getCurrentBalance();
-        }
-        else {
+    public double depositSum(Client client) {
+        currentMoney = 0;
+        if (client.getCurrentBalance() > 0 && this.accountBalance + client.getCurrentBalance() > 0) {
+            currentMoney = this.accountBalance + client.getCurrentBalance();
+        } else {
             System.out.println("The amount of money in the account is negative");
         }
         return currentMoney;
     }
 
-    public double withdrawSum(Client client){
+    public double withdrawSum(Client client) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the amount that you wish to withdraw");
         double withdrawSpecifiedSum = scanner.nextDouble();
-        if( currentMoney - withdrawSpecifiedSum > 0 && client.getCurrentBalance() > 0){
-            currentMoney -= withdrawSpecifiedSum ;
-        }
-        else {
+        if (currentMoney - withdrawSpecifiedSum > 0 && client.getCurrentBalance() > 0) {
+            currentMoney -= withdrawSpecifiedSum;
+        } else {
             System.out.println("ERROR : Could not withdraw specified amount");
         }
         scanner.close();
         return currentMoney;
     }
-
-
-
-
-
 
     public String toString(Client client) {
         return "BankAccount{" +
@@ -72,4 +65,6 @@ public class BankAccount {
                 ", clients=" + client.toString() +
                 '}';
     }
+
+
 }
