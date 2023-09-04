@@ -1,8 +1,8 @@
 package session11.challenges.challengeseven.devices.genericdevices;
 
-import session11.challenges.challengeseven.devices.interfacesfordevices.AlertMode;
 
-public class DoorSystem extends SecuritySystem implements AlertMode {
+
+public class DoorSystem extends SecuritySystem {
 
     private int closeDoor;
     private int lockDoor;
@@ -15,10 +15,10 @@ public class DoorSystem extends SecuritySystem implements AlertMode {
 
     @Override
     public void setAlertMode(){
-        System.out.println("Door is closed.");
         closeDoor = 1;
-        System.out.println("Door is locked.");
+        System.out.println("Door is closed.");
         lockDoor = 1;
+        System.out.println("Door is locked.");
     }
 
     @Override
