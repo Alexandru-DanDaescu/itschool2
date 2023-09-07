@@ -1,4 +1,4 @@
-package session12.practice.compilepolymorphism;
+package session12.practice.compiletimepolymorphism;
 
 public class Calculator {
 
