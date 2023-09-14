@@ -34,9 +34,9 @@ public class SetPractice {
     }
 
     private static Set<String> mergeProducts(Set<String> firstSet, Set<String> secondSet){
-        Set<String> result = new HashSet<>();
-        //result.addAll();
-        return null;
+        Set<String> result = new HashSet<>(firstSet);
+        result.addAll(secondSet);
+        return result;
     }
 
 }
