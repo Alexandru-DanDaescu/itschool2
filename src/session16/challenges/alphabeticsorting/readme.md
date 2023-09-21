@@ -1,0 +1,1 @@
+2.Write a program that uses lambda expressions to sort a list of strings in alphabetical order. 

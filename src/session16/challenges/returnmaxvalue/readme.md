@@ -1,0 +1,2 @@
+5.Create a functional interface that takes a list of integers and returns the maximum value from the list. Implement this
+interface using a lambda expression. Ensure your lambda correctly handles an empty list case.
