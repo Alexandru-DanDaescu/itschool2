@@ -1,4 +1,4 @@
-package session16.challenges.SumOfAllElements;
+package session16.challenges.sumofallelements;
 
 import java.util.Arrays;
 import java.util.List;

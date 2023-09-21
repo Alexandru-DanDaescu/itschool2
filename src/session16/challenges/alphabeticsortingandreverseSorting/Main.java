@@ -1,4 +1,4 @@
-package session16.challenges.AlphabeticSortingAndReverseSorting;
+package session16.challenges.alphabeticsortingandreverseSorting;
 
 import java.util.Collections;
 import java.util.List;
