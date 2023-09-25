@@ -1,0 +1,2 @@
+13.Using a stream of strings representing numbers (e.g., "1", "2", "3"), convert them to integers and find the product of
+all numbers using reduce. (Input: List<String> numbers = Arrays.asList("1", "2", "3", "4", "5");)

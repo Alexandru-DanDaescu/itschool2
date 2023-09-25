@@ -18,11 +18,7 @@ public class StreamsPractice {
 
         //stream approach;
 
-        List<Integer> evenNumbersStream = numbers.stream()
-                .filter(n -> n % 2 == 0)
-                .toList();
-
-        System.out.println("Stream approach: " + evenNumbersStream);
+        evenNumbers(numbers);
 
         String input = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel sapien at libero aliquet suscipit.";
         printContainingSubstring(input,"pi");
@@ -61,6 +57,14 @@ public class StreamsPractice {
             System.out.println("User doesn't have an email");
         }
 
+    }
+
+    private static void evenNumbers(List<Integer> numbers) {
+        List<Integer> evenNumbersStream = numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .toList();
+
+        System.out.println("Stream approach: " + evenNumbersStream);
     }
 
     private static Optional<String> getEmail(){
